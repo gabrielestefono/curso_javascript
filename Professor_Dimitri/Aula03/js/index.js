@@ -1,4 +1,9 @@
-let paragrafo = document.getElementById("texto");
-paragrafo.innerHTML = "Meu primeiro texto <b>JavaScript</b>";
-alert("Isso é um alerta!");
-console.log("Tô invisível!")
+let paragrafo = document.getElementById("texto").innerHTML = "Meu primeiro texto <b>JavaScript</b>";
+console.log("Tô invisível!");
+
+let a, b, c;
+a = 5;
+b = 6;
+c = 7;
+
+let pessoa = "Dimitri"; // = let pessoa="Dimitri";
