@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button>Pressione</button>
+    <script>
+      var button = document.querySelector("button");
+
+      button.onclick = function () {
+        var nome = prompt("Qual é o seu nome?");
+        alert("Olá " + nome + ", é um prazer te ver!");
+      };
+
+      var meuNome;
+      var minhaIdade;
+
+      console.log(meuNome);
+      console.log(minhaIdade);
+
+      meuNome = "Chris";
+      minhaIdade = 37;
+
+      console.log(meuNome);
+      console.log(minhaIdade);
+
+      var meuNome = "Chris";
+
+      console.log(meuNome);
+
+      seuNome = "Chris";
+
+      function logNome() {
+        console.log(seuNome);
+      }
+
+      logNome();
+
+      var seuNome;
+
+      // Sucessos! Nenhum erro foi lançado
+      var meuNome1 = "Chris";
+      var meuNome1 = "Bob";
+
+      // Erro! Você não pode redeclarar uma variável com let
+      // let meuNome2 = "Chris";
+      let meuNome2 = "Bob";
+
+      // Sucesso! Você pode reatribuir uma variável declarada com let
+      let meuNome3 = "Chris";
+      meuNome3 = "Bob";
+
+      // Tipos de variáveis
+
+      var minhaIdade = 17; // Número
+      var despedidaGolfinho = "Até logo e obrigado por todos os peixes!"; // String
+      var estouVivo = true; // Booleano
+      var teste = 6 < 3; // Booleano
+      var meuNomeArray = ["Chris", "Bob", "Jim"]; // Array
+      var meuNumeroArray = [10, 15, 40]; // Array
+      var cachorro = { nome: "Totó", raca: "Dálmata" }; // Objeto
+
+      // Constantes
+
+      const diasNaSemana = 7;
+      const horasNoDia = 24;
+
+      // const diasNaSemana = 7;
+      // diasNaSemana = 8; // Isso lançará um erro
+
+      
+    </script>
+  </body>
+</html>
