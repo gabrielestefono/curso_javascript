@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var shopping = ["bread", "milk", "cheese", "hummus", "noodles"];
+      console.log(shopping);
+
+      var sequence = [1, 1, 2, 3, 5, 8, 13];
+      var random = ["tree", 795, [0, 1, 2]];
+      console.log(shopping[0]);
+
+      shopping[0] = "tahini";
+      console.log(shopping);
+      console.log(random[2][2]);
+
+      var myData = "Manchester,London,Liverpool,Birmingham,Leeds,Carlisle";
+      var myArray = myData.split(",");
+      console.log(myArray);
+      console.log(myArray.length);
+      console.log(myArray[0]);
+      console.log(myArray[1]);
+      console.log(myArray[myArray.length - 1]);
+
+      var myNewString = myArray.join(",");
+      console.log(myNewString);
+
+      var dogNames = ["Rocket", "Flash", "Bella", "Slugger"];
+      console.log(dogNames.toString());
+
+      var myArray = [
+        "Manchester",
+        "London",
+        "Liverpool",
+        "Birmingham",
+        "Leeds",
+        "Carlisle",
+      ];
+
+      myArray.push("Cardiff");
+      console.log(myArray);
+      myArray.push("Bradford", "Brighton");
+      console.log(myArray);
+
+      var newLength = myArray.push("Bristol");
+      console.log(myArray);
+      console.log(newLength);
+
+      myArray.pop();
+      console.log(myArray);
+
+      var removedItem = myArray.pop();
+      console.log(myArray);
+      console.log(removedItem);
+
+      myArray.unshift("Edinburgh");
+      console.log(myArray);
+
+      var removedItem = myArray.shift();
+      console.log(myArray);
+      console.log(removedItem);
+    </script>
+  </body>
+</html>
