@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      p {
+        color: purple;
+        margin: 0.5em 0;
+      }
+    </style>
+  </head>
+  <body>
+    <section></section>
+    <script>
+      const birds = [
+        "Parrots",
+        "Falcons",
+        "Eagles",
+        "Emus",
+        "Caracaras",
+        "Egrets",
+      ];
+
+      // Add your code here
+      const indexOfEagle = birds.indexOf("Eagles");
+
+      birds.splice(indexOfEagle, 1);
+
+      const eBirds = [];
+      birds.forEach((element) => {
+        if (element.startsWith("E")) {
+          eBirds.push(element);
+        }
+      });
+
+      // Don't edit the code below here!
+
+      const section = document.querySelector("section");
+      const para1 = document.createElement("p");
+      para1.textContent = eBirds;
+      section.appendChild(para1);
+    </script>
+  </body>
+</html>

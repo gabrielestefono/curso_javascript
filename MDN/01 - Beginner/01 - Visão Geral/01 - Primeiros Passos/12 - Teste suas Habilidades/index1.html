@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      p {
+        color: purple;
+        margin: 0.5em 0;
+      }
+    </style>
+  </head>
+  <body>
+    <section></section>
+    <script>
+      // Add your code here
+      const myArray = ["html", "css", "Javascript"];
+
+      myArray[0] = myArray[0].toUpperCase();
+      myArray[1] = myArray[1].toUpperCase();
+
+      myArray.unshift("Node.js");
+
+      // Don't edit the code below here!
+
+      const section = document.querySelector("section");
+      const para1 = document.createElement("p");
+      para1.textContent = `Array: ${myArray}`;
+      section.appendChild(para1);
+    </script>
+  </body>
+</html>
